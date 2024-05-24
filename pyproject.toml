@@ -29,3 +29,9 @@ dev = ["flit"]
 
 [tool.flit.module]
 name = "wik"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = "src"

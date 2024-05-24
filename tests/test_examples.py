@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 import unittest
-
+import pytest
 from wik import info
 
-
 class FetchTest(unittest.TestCase):
-    def getSummary(self):
+    def test_getSummary(self):
         result = info.getSummary("Linux")
         self.assertEqual(
             result,
@@ -15,4 +14,6 @@ Linux (/ˈlinʊks/ (listen) LEEN-uuks or /ˈlɪnʊks/ LIN-uuks) is a family of o
 
 
 Distributions include the Linux kernel and supporting system software and libraries, many of which are provided by the GNU Project. Many Linux distributions use the word "Linux" in their name, but the Free Software Foundation uses the name "GNU/Linux" to emphasize the importance of GNU software, causing some controversy.""",
-        )
+       )
+
+

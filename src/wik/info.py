@@ -97,6 +97,7 @@ def getInfo(term, lang="en"):
     # content = list(get_tags(soup),{'p':{}, 'span':{'class': 'mw-headline'}})
 
     # Remove all external links
+    print(list(enumerate(content[8:13])))
     for i in content:
         if i("sup"):
             for tag in i("sup"):
