@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import argparse
 from wik import info
 
@@ -13,7 +12,6 @@ if __name__=="__main__":
     parser.add_argument(
         "-x", "--rand", help="Get random Wikipedia article", action="store_true"
     )
-
     a = parser.parse_args()
     if not a.lang: a.lang="EN"
 
@@ -26,3 +24,5 @@ if __name__=="__main__":
             info.searchInfo(a.search, a.lang)
         if a.rand:
             info.getRand(a.lang)
+
+    arguments()
