@@ -5,4 +5,7 @@ pip-log.txt
 *.manifest
 *.spec
 __pypackages__/
+src/wik/__pycache__/
 
+notes.txt
+*.txt

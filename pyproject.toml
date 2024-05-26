@@ -7,6 +7,7 @@ build-backend = "hatchling.build"
 name = "wik"
 authors = [{name = "Yash Singh", email = "mailmeatyashsingh@gmail.com"}]
 readme = "README.md"
+version = "1.4.0"
 license = {file = "LICENSE"}
 classifiers = [
   "Programming Language :: Python :: 3",
